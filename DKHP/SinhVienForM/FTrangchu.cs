@@ -24,7 +24,9 @@ namespace DKHP
 
         private void guna2ImageButton4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FLogin flogin = new FLogin();
+            flogin.ShowDialog();  
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -34,7 +36,9 @@ namespace DKHP
 
         private void guna2ImageButton3_Click(object sender, EventArgs e)
         {
-
+            FThongtinSV FTTSV = new FThongtinSV(MaNguoiDung);
+            loadForm(FTTSV);
+            txtname.Text = "Student information";
         }
 
         private void FTrangchu_Load(object sender, EventArgs e)
@@ -56,5 +60,16 @@ namespace DKHP
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndiem_Click(object sender, EventArgs e)
+        {
+            FDiem fdiem = new FDiem(MaNguoiDung);
+            loadForm(fdiem);
+            txtname.Text = "Grade";
+        }
     }
 }

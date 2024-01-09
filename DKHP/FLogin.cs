@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DKHP
 {
-    public partial class Form1 : Form
+    public partial class FLogin : Form
     {
         DKHPEntities db = new DKHPEntities();
-        public Form1()
+        public FLogin()
         {
             InitializeComponent();
         }

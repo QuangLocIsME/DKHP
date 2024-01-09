@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.panelformshow = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.txtname = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btndangxuat = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnsetting = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btndiem = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -38,12 +43,7 @@
             this.btntkb = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnthongtin = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btntrangchu = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.panelformshow = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
-            this.panelformshow.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -70,6 +70,52 @@
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(43, 10);
             this.guna2Separator1.TabIndex = 3;
+            // 
+            // panelformshow
+            // 
+            this.panelformshow.Location = new System.Drawing.Point(120, 119);
+            this.panelformshow.Name = "panelformshow";
+            this.panelformshow.Size = new System.Drawing.Size(1276, 498);
+            this.panelformshow.TabIndex = 1;
+            // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Separator2.Location = new System.Drawing.Point(119, 103);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(1140, 10);
+            this.guna2Separator2.TabIndex = 1;
+            // 
+            // txtname
+            // 
+            this.txtname.AutoSize = true;
+            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.ForeColor = System.Drawing.Color.White;
+            this.txtname.Location = new System.Drawing.Point(127, 72);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(117, 25);
+            this.txtname.TabIndex = 0;
+            this.txtname.Text = "Dashboard";
+            this.txtname.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderRadius = 10;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1423, -1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(24, 19);
+            this.guna2ControlBox1.TabIndex = 2;
+            this.guna2ControlBox1.UseTransparentBackground = true;
             // 
             // btndangxuat
             // 
@@ -123,7 +169,7 @@
             this.btndiem.Size = new System.Drawing.Size(45, 46);
             this.btndiem.TabIndex = 1;
             this.btndiem.UseTransparentBackground = true;
-            this.btndiem.Click += new System.EventHandler(this.guna2ImageButton4_Click);
+            this.btndiem.Click += new System.EventHandler(this.btndiem_Click);
             // 
             // btndkhp
             // 
@@ -196,45 +242,15 @@
             this.btntrangchu.UseTransparentBackground = true;
             this.btntrangchu.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // panelformshow
-            // 
-            this.panelformshow.Controls.Add(this.guna2Separator2);
-            this.panelformshow.Controls.Add(this.label1);
-            this.panelformshow.Location = new System.Drawing.Point(120, 28);
-            this.panelformshow.Name = "panelformshow";
-            this.panelformshow.Size = new System.Drawing.Size(1276, 589);
-            this.panelformshow.TabIndex = 1;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Separator2.Location = new System.Drawing.Point(8, 75);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(1140, 10);
-            this.guna2Separator2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this;
-            // 
             // FTrangchu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(60)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(1448, 646);
+            this.Controls.Add(this.guna2Separator2);
+            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.panelformshow);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -243,9 +259,8 @@
             this.Text = "FTrangchu";
             this.Load += new System.EventHandler(this.FTrangchu_Load);
             this.guna2Panel1.ResumeLayout(false);
-            this.panelformshow.ResumeLayout(false);
-            this.panelformshow.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -260,9 +275,10 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnsetting;
         private Guna.UI2.WinForms.Guna2ImageButton btndiem;
         private Guna.UI2.WinForms.Guna2Panel panelformshow;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtname;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

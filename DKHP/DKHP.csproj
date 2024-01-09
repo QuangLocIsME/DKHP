@@ -85,6 +85,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>database.edmx</DependentUpon>
     </Compile>
+    <Compile Include="FDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDiem.Designer.cs">
+      <DependentUpon>FDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,16 +103,22 @@
     <Compile Include="FKhoa.Designer.cs">
       <DependentUpon>FKhoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FTrangchu.cs">
+    <Compile Include="SinhVienForM\FThongtinSV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FTrangchu.Designer.cs">
+    <Compile Include="SinhVienForM\FThongtinSV.Designer.cs">
+      <DependentUpon>FThongtinSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVienForM\FTrangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienForM\FTrangchu.Designer.cs">
       <DependentUpon>FTrangchu.cs</DependentUpon>
     </Compile>
     <Compile Include="GiangVien.cs">
@@ -141,16 +153,22 @@
     <Compile Include="ThoiKhoaBieu.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FDiem.resx">
+      <DependentUpon>FDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGV.resx">
       <DependentUpon>FGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FKhoa.resx">
       <DependentUpon>FKhoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FTrangchu.resx">
+    <EmbeddedResource Include="SinhVienForM\FThongtinSV.resx">
+      <DependentUpon>FThongtinSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVienForM\FTrangchu.resx">
       <DependentUpon>FTrangchu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
