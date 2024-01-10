@@ -85,17 +85,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>database.edmx</DependentUpon>
     </Compile>
-    <Compile Include="FDiem.cs">
+    <Compile Include="Day.cs">
+      <DependentUpon>database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FDKHP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDiem.Designer.cs">
-      <DependentUpon>FDiem.cs</DependentUpon>
+    <Compile Include="FDKHP.Designer.cs">
+      <DependentUpon>FDKHP.cs</DependentUpon>
     </Compile>
     <Compile Include="FGV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FGV.Designer.cs">
       <DependentUpon>FGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKetQuaHocTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKetQuaHocTap.Designer.cs">
+      <DependentUpon>FKetQuaHocTap.cs</DependentUpon>
     </Compile>
     <Compile Include="FKhoa.cs">
       <SubType>Form</SubType>
@@ -109,17 +118,11 @@
     <Compile Include="FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="SinhVienForM\FThongtinSV.cs">
+    <Compile Include="FTKB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SinhVienForM\FThongtinSV.Designer.cs">
-      <DependentUpon>FThongtinSV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SinhVienForM\FTrangchu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SinhVienForM\FTrangchu.Designer.cs">
-      <DependentUpon>FTrangchu.cs</DependentUpon>
+    <Compile Include="FTKB.Designer.cs">
+      <DependentUpon>FTKB.cs</DependentUpon>
     </Compile>
     <Compile Include="GiangVien.cs">
       <DependentUpon>database.tt</DependentUpon>
@@ -145,25 +148,43 @@
     <Compile Include="PhanQuyen.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinhVien.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
+    <Compile Include="SinhVienForM\FThongtinSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienForM\FThongtinSV.Designer.cs">
+      <DependentUpon>FThongtinSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVienForM\FTrangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienForM\FTrangchu.Designer.cs">
+      <DependentUpon>FTrangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoiKhoaBieu.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FDiem.resx">
-      <DependentUpon>FDiem.cs</DependentUpon>
+    <EmbeddedResource Include="FDKHP.resx">
+      <DependentUpon>FDKHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FGV.resx">
       <DependentUpon>FGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKetQuaHocTap.resx">
+      <DependentUpon>FKetQuaHocTap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FKhoa.resx">
       <DependentUpon>FKhoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTKB.resx">
+      <DependentUpon>FTKB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SinhVienForM\FThongtinSV.resx">
       <DependentUpon>FThongtinSV.cs</DependentUpon>
@@ -215,16 +236,7 @@
     <None Include="Resources\home.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="database.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>database.edmx</DependentUpon>
-      <LastGenOutput>database.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="database.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>database.edmx</DependentUpon>
-      <LastGenOutput>database.cs</LastGenOutput>
-    </Content>
+    <None Include="Resources\home %281%292.png" />
     <None Include="Resources\home1.png" />
     <None Include="Resources\home %281%291.png" />
     <None Include="Resources\user.png" />
@@ -246,6 +258,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>database.edmx</DependentUpon>
+      <LastGenOutput>database.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="database.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>database.edmx</DependentUpon>
+      <LastGenOutput>database.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

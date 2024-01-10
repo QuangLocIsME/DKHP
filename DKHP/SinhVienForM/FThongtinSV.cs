@@ -12,7 +12,7 @@ namespace DKHP
 {
     public partial class FThongtinSV : Form
     {
-        DKHPEntities db = new DKHPEntities();
+        DKHPEntities2 db = new DKHPEntities2();
         private int MaNguoiDung;
         public FThongtinSV(int MaNguoiDung)
         {

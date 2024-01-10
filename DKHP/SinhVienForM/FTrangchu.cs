@@ -13,7 +13,7 @@ namespace DKHP
 {
     public partial class FTrangchu : Form
     {
-        DKHPEntities db = new DKHPEntities();
+        DKHPEntities2 db = new DKHPEntities2();
         private int MaNguoiDung;
         public FTrangchu(int MaNguoiDung)
         {
@@ -26,7 +26,7 @@ namespace DKHP
         {
             this.Hide();
             FLogin flogin = new FLogin();
-            flogin.ShowDialog();  
+            flogin.ShowDialog();
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -67,9 +67,30 @@ namespace DKHP
 
         private void btndiem_Click(object sender, EventArgs e)
         {
-            FDiem fdiem = new FDiem(MaNguoiDung);
+            FKetQuaHocTap fdiem = new FKetQuaHocTap(MaNguoiDung);
             loadForm(fdiem);
             txtname.Text = "Grade";
+        }
+
+        private void btntkb_Click(object sender, EventArgs e)
+        {
+            FTKB ftkb = new FTKB(MaNguoiDung);
+            loadForm(ftkb);
+            txtname.Text = "Time Table";
+        }
+
+        private void btndangxuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FLogin flogin = new FLogin();
+            flogin.ShowDialog();
+        }
+
+        private void btndkhp_Click(object sender, EventArgs e)
+        {
+            FDKHP fdkhp = new FDKHP(MaNguoiDung);
+            loadForm(fdkhp);
+            txtname.Text = "Course Registration";
         }
     }
 }

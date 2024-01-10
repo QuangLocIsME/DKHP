@@ -13,10 +13,10 @@ namespace DKHP
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DKHPEntities : DbContext
+    public partial class DKHPEntities2 : DbContext
     {
-        public DKHPEntities()
-            : base("name=DKHPEntities")
+        public DKHPEntities2()
+            : base("name=DKHPEntities2")
         {
         }
     
@@ -27,6 +27,7 @@ namespace DKHP
     
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<DangKy> DangKies { get; set; }
+        public virtual DbSet<Day> Days { get; set; }
         public virtual DbSet<GiangVien> GiangViens { get; set; }
         public virtual DbSet<KetQuaHocTap> KetQuaHocTaps { get; set; }
         public virtual DbSet<KHOA> KHOAs { get; set; }

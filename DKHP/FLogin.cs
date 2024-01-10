@@ -12,7 +12,7 @@ namespace DKHP
 {
     public partial class FLogin : Form
     {
-        DKHPEntities db = new DKHPEntities();
+        DKHPEntities2 db = new DKHPEntities2();
         public FLogin()
         {
             InitializeComponent();

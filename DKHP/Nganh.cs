@@ -18,6 +18,7 @@ namespace DKHP
         public Nganh()
         {
             this.Lops = new HashSet<Lop>();
+            this.SinhViens = new HashSet<SinhVien>();
         }
     
         public int MaNganh { get; set; }
@@ -27,5 +28,7 @@ namespace DKHP
         public virtual KHOA KHOA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Lop> Lops { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SinhVien> SinhViens { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace DKHP
 {
     public partial class FGV : Form
     {
-        DKHPEntities db = new DKHPEntities();
+        DKHPEntities2 db = new DKHPEntities2();
         private int MaNguoiDung;
         public FGV(int MaNguoiDung)
         {
@@ -22,6 +22,11 @@ namespace DKHP
         private void FGV_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

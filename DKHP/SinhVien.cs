@@ -28,6 +28,7 @@ namespace DKHP
         public string GioiTinh { get; set; }
         public string DiaChi { get; set; }
         public int MaKhoa { get; set; }
+        public int MaNganh { get; set; }
         public int MaLop { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -36,5 +37,6 @@ namespace DKHP
         public virtual ICollection<DangKy> DangKies { get; set; }
         public virtual KHOA KHOA { get; set; }
         public virtual Lop Lop { get; set; }
+        public virtual Nganh Nganh { get; set; }
     }
 }

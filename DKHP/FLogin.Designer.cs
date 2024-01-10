@@ -141,11 +141,12 @@
             this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
             this.txtPassword.Location = new System.Drawing.Point(41, 190);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderText = "PASSWORD";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(182, 25);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUser
             // 
@@ -187,7 +188,7 @@
             this.guna2ControlBox1.TabIndex = 1;
             this.guna2ControlBox1.UseTransparentBackground = true;
             // 
-            // Form1
+            // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,7 +197,7 @@
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FLogin";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel1.ResumeLayout(false);

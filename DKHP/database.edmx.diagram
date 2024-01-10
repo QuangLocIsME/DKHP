@@ -4,36 +4,38 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="46628d414e564802b55d5462c08cec85" Name="Diagram1">
-        <EntityTypeShape EntityType="DKHP1Model.Account" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.DangKy" Width="1.5" PointX="10.5" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.GiangVien" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.KetQuaHocTap" Width="1.5" PointX="12.75" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.KHOA" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.Lop" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.LopHocPhan" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.MonHoc" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.Nganh" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.PhanQuyen" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.SinhVien" Width="1.5" PointX="7.5" PointY="12.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DKHP1Model.ThoiKhoaBieu" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="DKHP1Model.FK__Account__MaNguoi__71D1E811" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__Account__MaNguoi__72C60C4A" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__Account__Role__70DDC3D8" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__DangKy__MaHP__60A75C0F" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__DangKy__MaSV__5FB337D6" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__KetQuaHocTap__6754599E" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__GiangVien__MaKho__440B1D61" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__Lop__GiangVien__47DBAE45" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__LopHocPhan__MaGV__5BE2A6F2" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__Nganh__MaKhoa__403A8C7D" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__SinhVien__MaKhoa__4BAC3F29" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__Lop__MaNganh__46E78A0C" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__SinhVien__MaLop__4CA06362" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__LopHocPha__ThoiK__59FA5E80" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.FK__LopHocPhan__MaMH__5AEE82B9" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.Day" ManuallyRouted="false" />
-        <AssociationConnector Association="DKHP1Model.MHTienQuyet" ManuallyRouted="false" />
+      <Diagram DiagramId="565fe7c9a5d745299f3d798615ec45f4" Name="Diagram1">
+        <EntityTypeShape EntityType="DKHPModel.Account" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.DangKy" Width="1.5" PointX="9.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.Day" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.GiangVien" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.KetQuaHocTap" Width="1.5" PointX="12" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.KHOA" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.Lop" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.LopHocPhan" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.MonHoc" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.Nganh" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.PhanQuyen" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.SinhVien" Width="1.5" PointX="7.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DKHPModel.ThoiKhoaBieu" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <AssociationConnector Association="DKHPModel.FK__Account__MaNguoi__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Account__MaNguoi__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Account__Role__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__DangKy__MaHP__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__DangKy__MaSV__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__KetQuaHocTap__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Day__MaGV__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Day__MaHP__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__GiangVien__MaKho__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Lop__GiangVien__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Nganh__MaKhoa__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__SinhVien__MaKhoa__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__Lop__MaNganh__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__SinhVien__MaLop__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__LopHocPha__ThoiK__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__LopHocPhan__MaMH__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.FK__SinhVien__MaNgan__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="DKHPModel.MHTienQuyet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

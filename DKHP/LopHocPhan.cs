@@ -18,7 +18,7 @@ namespace DKHP
         public LopHocPhan()
         {
             this.DangKies = new HashSet<DangKy>();
-            this.GiangViens = new HashSet<GiangVien>();
+            this.Days = new HashSet<Day>();
         }
     
         public int MaHP { get; set; }
@@ -28,17 +28,15 @@ namespace DKHP
         public int SoSVToiDa { get; set; }
         public int SoSVHienTai { get; set; }
         public int MaMH { get; set; }
-        public int MaGV { get; set; }
         public string HocKy { get; set; }
         public int NamHoc { get; set; }
         public int ThoiKhoaBieu { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DangKy> DangKies { get; set; }
-        public virtual GiangVien GiangVien { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Day> Days { get; set; }
         public virtual ThoiKhoaBieu ThoiKhoaBieu1 { get; set; }
         public virtual MonHoc MonHoc { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GiangVien> GiangViens { get; set; }
     }
 }

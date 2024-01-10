@@ -12,16 +12,13 @@ namespace DKHP
     using System;
     using System.Collections.Generic;
     
-    public partial class KetQuaHocTap
+    public partial class Day
     {
-        public int MaSV { get; set; }
+        public int MaGV { get; set; }
         public int MaHP { get; set; }
         public int NamHoc { get; set; }
-        public Nullable<decimal> DiemKT { get; set; }
-        public Nullable<decimal> DiemGK { get; set; }
-        public Nullable<decimal> DiemCK { get; set; }
-        public Nullable<decimal> DiemTB { get; set; }
     
-        public virtual DangKy DangKy { get; set; }
+        public virtual GiangVien GiangVien { get; set; }
+        public virtual LopHocPhan LopHocPhan { get; set; }
     }
 }

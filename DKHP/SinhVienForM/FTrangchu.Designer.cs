@@ -36,6 +36,7 @@
             this.txtname = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.btndangxuat = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnsetting = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btndiem = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -117,6 +118,10 @@
             this.guna2ControlBox1.TabIndex = 2;
             this.guna2ControlBox1.UseTransparentBackground = true;
             // 
+            // guna2AnimateWindow1
+            // 
+            this.guna2AnimateWindow1.TargetForm = this;
+            // 
             // btndangxuat
             // 
             this.btndangxuat.BackColor = System.Drawing.Color.Transparent;
@@ -133,7 +138,7 @@
             this.btndangxuat.Size = new System.Drawing.Size(45, 46);
             this.btndangxuat.TabIndex = 1;
             this.btndangxuat.UseTransparentBackground = true;
-            this.btndangxuat.Click += new System.EventHandler(this.guna2ImageButton4_Click);
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
             // 
             // btnsetting
             // 
@@ -187,7 +192,7 @@
             this.btndkhp.Size = new System.Drawing.Size(45, 46);
             this.btndkhp.TabIndex = 1;
             this.btndkhp.UseTransparentBackground = true;
-            this.btndkhp.Click += new System.EventHandler(this.guna2ImageButton4_Click);
+            this.btndkhp.Click += new System.EventHandler(this.btndkhp_Click);
             // 
             // btntkb
             // 
@@ -205,6 +210,7 @@
             this.btntkb.Size = new System.Drawing.Size(45, 46);
             this.btntkb.TabIndex = 1;
             this.btntkb.UseTransparentBackground = true;
+            this.btntkb.Click += new System.EventHandler(this.btntkb_Click);
             // 
             // btnthongtin
             // 
@@ -280,5 +286,6 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
