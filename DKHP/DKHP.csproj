@@ -88,22 +88,28 @@
     <Compile Include="Day.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
-    <Compile Include="FDKHP.cs">
+    <Compile Include="GiangVienForm\FChinhDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDKHP.Designer.cs">
+    <Compile Include="GiangVienForm\FChinhDiem.Designer.cs">
+      <DependentUpon>FChinhDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVienForM\FDKHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienForM\FDKHP.Designer.cs">
       <DependentUpon>FDKHP.cs</DependentUpon>
     </Compile>
-    <Compile Include="FGV.cs">
+    <Compile Include="GiangVienForm\FGV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FGV.Designer.cs">
+    <Compile Include="GiangVienForm\FGV.Designer.cs">
       <DependentUpon>FGV.cs</DependentUpon>
     </Compile>
-    <Compile Include="FKetQuaHocTap.cs">
+    <Compile Include="SinhVienForM\FKetQuaHocTap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FKetQuaHocTap.Designer.cs">
+    <Compile Include="SinhVienForM\FKetQuaHocTap.Designer.cs">
       <DependentUpon>FKetQuaHocTap.cs</DependentUpon>
     </Compile>
     <Compile Include="FKhoa.cs">
@@ -118,14 +124,32 @@
     <Compile Include="FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FTKB.cs">
+    <Compile Include="GiangVienForm\FSuaDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FTKB.Designer.cs">
+    <Compile Include="GiangVienForm\FSuaDiem.Designer.cs">
+      <DependentUpon>FSuaDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVienForM\FTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVienForM\FTKB.Designer.cs">
       <DependentUpon>FTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiangVienForm\FTTGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiangVienForm\FTTGV.Designer.cs">
+      <DependentUpon>FTTGV.cs</DependentUpon>
     </Compile>
     <Compile Include="GiangVien.cs">
       <DependentUpon>database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GiangVienForm\GVTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiangVienForm\GVTKB.Designer.cs">
+      <DependentUpon>GVTKB.cs</DependentUpon>
     </Compile>
     <Compile Include="KetQuaHocTap.cs">
       <DependentUpon>database.tt</DependentUpon>
@@ -168,13 +192,16 @@
     <Compile Include="ThoiKhoaBieu.cs">
       <DependentUpon>database.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FDKHP.resx">
+    <EmbeddedResource Include="GiangVienForm\FChinhDiem.resx">
+      <DependentUpon>FChinhDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVienForM\FDKHP.resx">
       <DependentUpon>FDKHP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FGV.resx">
+    <EmbeddedResource Include="GiangVienForm\FGV.resx">
       <DependentUpon>FGV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FKetQuaHocTap.resx">
+    <EmbeddedResource Include="SinhVienForM\FKetQuaHocTap.resx">
       <DependentUpon>FKetQuaHocTap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FKhoa.resx">
@@ -183,8 +210,17 @@
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FTKB.resx">
+    <EmbeddedResource Include="GiangVienForm\FSuaDiem.resx">
+      <DependentUpon>FSuaDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVienForM\FTKB.resx">
       <DependentUpon>FTKB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiangVienForm\FTTGV.resx">
+      <DependentUpon>FTTGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiangVienForm\GVTKB.resx">
+      <DependentUpon>GVTKB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SinhVienForM\FThongtinSV.resx">
       <DependentUpon>FThongtinSV.cs</DependentUpon>
